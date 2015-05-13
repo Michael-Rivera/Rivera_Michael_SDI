@@ -53,4 +53,12 @@ console.log("You spent a total of $"+totalSpent + " on groceries over 5 weeks. T
 // This is what prints to the console
 
 //Discounts
-
+// items are tacos
+var orgPrice = 1.50; // tacos originally cost $1.50
+var tax = .074;// the local tax bracket is .074%
+var discount = 20;// 20% discount
+var item = "taco";// one taco
+var dscAmnt = orgPrice * (discount/100);// what 20% of $1.50 is
+var dscPrice = orgPrice - dscAmnt;// original price minus the discount without tax
+var dscPricewithTax = dscPrice*tax+dscPrice;// discount price with tax
+console.log ("Your "+ item+" was originally $"+orgPrice +", but after a "+discount+"%, it is now $"+dscPrice+" without tax, and $"+dscPricewithTax+" with tax.");
