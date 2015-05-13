@@ -18,9 +18,9 @@ var slices = 8;
 
 var people = 19;
 
-var pizzas = 5;
+var pizzas = 7;
 
 
 var numSlices = slices * pizzas;
 
-print.log (numSlices);
+console.log (numSlices);
