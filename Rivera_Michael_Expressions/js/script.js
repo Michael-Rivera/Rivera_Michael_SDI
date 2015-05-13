@@ -1,8 +1,10 @@
 /**
  * Created by michaelrivera1 on 5/12/15.
  */
-// Year of Birth
+// arithmetic Operators
+// are of a triangle is half the width times the height
 
-var yearBorn = 1986;
-var age = 2015 - yearBorn -1;
-console.log (age);
+var width = (4);
+var height = (5);
+var area = width * height/2;
+console.log (area); 
