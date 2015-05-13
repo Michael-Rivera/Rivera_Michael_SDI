@@ -5,4 +5,4 @@ var sparkysAge =4;
 var dogYears =7;
 var result = sparkysAge * 7 ;
 
-console.log ("Sparky is "+ sparkysAge + "human years old which is "result +" in dog years."); 
+console.log ("Sparky is "+ sparkysAge + " human years old which is " + result + " in dog years."); 
