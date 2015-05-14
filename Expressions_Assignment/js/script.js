@@ -11,9 +11,10 @@ Expressions Assignment
 */
 alert ("Hi, I would like to know \nyour average lap time.");
 alert ("Please follow the prompts and only provide \nminutes or seconds when asked.");
-var lapOne = prompt [];
-var ttlMin
-var ttlSec
+var lapMin = [0,0,0,];
+var lapSec = [0,0,0,];
+var ttlMin = (lapMin[3]+lapMin[4]+lapMin[5]);
+var ttlSec = (lapSec [3]+lapSec[4]+lapSec[5]);
 var avgMin = (ttlMin/3);
 var avgSec=  (ttlSec/3);
 prompt = ("How many minutes did it take to complete your first lap?");
