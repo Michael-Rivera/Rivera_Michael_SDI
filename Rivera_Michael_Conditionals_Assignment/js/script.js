@@ -50,25 +50,28 @@ if(bass[0] > 0){
     alert(troutLength + " inches")
     console.log(troutLength + " inches")
 }
-if (bassLength>1 && bassLength<minLengthBass){
-    alert("Toss it back.")
-    console.log ("Toss it back.")
+if (bassLength > minLengthBass){
+    alert("Now that's a lunker!.")
+    console.log ("Now that's a lunker.")
 
+}else if (bassLength > 0 && bassLength < minLengthBass){
+    alert("Toss it back.")
+    console.log ("Toss it back.")// causes a problem if a trout is caught
 }else{
+    alert ("Lets keep fishing")
+    console.log ("Lets keep fishing.")
+}
+
+if (troutLength > minLengthTrout) {
     alert("It's a keeper!")
-    console.log ("It's a keeper!")
+    console.log("It's a keeper.")
 }
-if(trout[0] > 0){
-    troutLength =prompt ("How long is it in inches?")
-    alert (troutLength +" inches")
-    console.log (troutLength +" inches")
-}
+(troutLength >0 && troutLength < minLengthTrout) ? alert("Toss it back.") : alert("Catch another one.")
 
-if (troutLength>1 && troutLength<minLengthTrout) {
-    alert("Toss it back.")
-    console.log("Toss it back.")
-}
-(troutLength > minLengthTrout) ? alert("It's a keeper!") : alert("Let's keep fishing!")
+var object
 
+var object = prompt("Do you want to cast to the log or the eddie?");
+
+(object == "log") ? alert ("You caught a bass!") : alert ("You caught a trout!");
 //(bass[0] > 0) ? console.log (bassLength + " inches") : console.log(troutLength + " inches");
 //console.log (bassLength);
