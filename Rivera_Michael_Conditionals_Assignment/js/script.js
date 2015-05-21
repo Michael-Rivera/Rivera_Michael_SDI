@@ -58,6 +58,7 @@ if (bassLength > minLengthBass){
     alert("Toss it back.")
     console.log ("Toss it back.")// causes a problem if a trout is caught
 }else{
+    trout[0]++
     alert ("Lets keep fishing")
     console.log ("Lets keep fishing.")
 }
@@ -68,10 +69,45 @@ if (troutLength > minLengthTrout) {
 }
 (troutLength >0 && troutLength < minLengthTrout) ? alert("Toss it back.") : alert("Catch another one.")
 
-var object
+var object // object refers to either the log or eddie
 
-var object = prompt("Do you want to cast to the log or the eddie?");
+var object = prompt("Do you want to cast to the log or the eddie?");// trout like eddies while bass like a break in the current.
 
 (object == "log") ? alert ("You caught a bass!") : alert ("You caught a trout!");
-//(bass[0] > 0) ? console.log (bassLength + " inches") : console.log(troutLength + " inches");
-//console.log (bassLength);
+// All lines down here are copied from the lines above with minor changes. The sizing should remain the same as earlier.
+
+if(bass[1] > 0){
+    bassLength =prompt ("How long is it in inches?")
+    alert (bassLength +" inches")
+    console.log (bassLength +" inches")
+
+
+}else {
+    troutLength = prompt("How long is it in inches?")
+    alert(troutLength + " inches")
+    console.log(troutLength + " inches")
+}
+if (bassLength > minLengthBass){// some trouble figuring out how to keepthis from activating when I don't want it to.
+    alert("Now that's a lunker!.")
+    console.log ("Now that's a lunker.")
+
+}else if (bassLength > 0 && bassLength < minLengthBass){// this fish must be thrown back
+    alert("Toss it back.")
+    console.log ("Toss it back.")// causes a problem if a trout is caught
+}else{
+    trout[1]++
+    alert ("Lets keep fishing")
+    console.log ("Lets keep fishing.")
+}
+
+if (troutLength > minLengthTrout) {// simple if statement that lets the user know that their fish is big enough
+    alert("It's a keeper!")
+    console.log("It's a keeper.")
+}
+(troutLength >0 && troutLength < minLengthTrout) ? alert("Toss it back.") : alert("Catch another one.")// this is ma ternary
+
+var totalBass = bass [0] + bass[1]//this should be the total of bass caught
+var totalTrout = trout [0] + trout[1]//this should be the total of trout caught.
+
+alert ("You get to take home "+totalBass+" bass and "+ totalTrout +" trout."+"\n It was fun no matter how it turned out.");
+/* I still have problems with arrays apparently.
