@@ -31,10 +31,6 @@ if(sunny==="yes"){
     bass[0]++;// Add a bass to your bag
     console.log (bass[0] + " bass");
     alert("You caught a bass!");
-    console.log ("You caught a bass!");
-    bassLength=prompt= Number("How many inches long is it?");
-    (bassLength<minLengthBass)? console.log ("Toss it back.")+bass[0] -- + alert("Toss it back") : console.log ("It's a keeper") && alert ("It's a keeper.")
-
 
 }else {
     trout[0]++;
@@ -43,4 +39,5 @@ if(sunny==="yes"){
     console.log ("You caught a trout!");
 }
 
+(bass[0] > 0) ? bassLength=prompt ("How long is it in inches?") && console.log (bassLength + " inches") : troutLength=prompt ("How long is it in inches?") && console.log(troutLength + " inches")
 
