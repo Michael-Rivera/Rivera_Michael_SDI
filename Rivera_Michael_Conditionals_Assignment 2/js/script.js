@@ -23,8 +23,7 @@ var minLengthTrout=15;// These are the minimum and maximum values that you can t
 var minLengthBass=18;
 var bassLength;
 var troutLength;
-var totalBass = bass [0] + bass[1]//this should be the total of bass caught
-var totalTrout = trout [0] + trout[1]//this should be the total of trout caught.
+
 alert ("No capitol letters please.\nIt breaks my code lol.");// I couldn't get my if statement to check for "Yes"||"YES"
 var sunny=prompt ("Is it sunny out?");// Bass are more likely to bite than trout when sunny
 console.log (sunny);
@@ -107,9 +106,9 @@ if (troutLength > minLengthTrout) {// simple if statement that lets the user kno
 }
 (troutLength >0 && troutLength < minLengthTrout) ? alert("Toss it back.") : alert("Catch another one.")// this is ma ternary
 
-
+var totalBass = bass [0] + bass[1]//this should be the total of bass caught
+var totalTrout = trout [0] + trout[1]//this should be the total of trout caught.
 
 alert ("You get to take home "+totalBass+" bass and "+ totalTrout +" trout."+"\n It was fun no matter how it turned out.");
 console.log ("You get to take home "+totalBass+" bass and "+ totalTrout +" trout."+"\n It was fun no matter how it turned out.");
-
-// I still have problems with arrays apparently.
+/* I still have problems with arrays apparently.
