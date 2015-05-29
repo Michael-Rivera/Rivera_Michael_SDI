@@ -21,37 +21,18 @@ alert("There is a 3 digit lock. Can\nyou figure out the combination?");
 var first = 9;
 var second = 4;
 var third = 7;
+numCheck(fstDigit);
 
 
+ var fstDigit = prompt("What is the first number in\n the combination? ");
 
- var fstDigit = function(){
-     prompt("What is the first number in\n the combination? ");
 
- };
 var scdDigit = function(){
     prompt ("What is the second digit\nin the combination?")
 };
 var thdDigit = function(){
     prompt ("What is the third digit\nin the combination?")
 };
-
-function numCheck(first){
-    while(first===""||Number(first)>9){
-        if(first===""){
-            prompt ("Please do not leave blank.")
-        }else if(Number(first)>9){
-            prompt("Please enter a number between 0 and 9.")
-
-        }else{
-            prompt ("Please enter a single digit number.")
-        }
-    }
-
-
-}
-numCheck (fstDigit);
-
-
 
 
 
