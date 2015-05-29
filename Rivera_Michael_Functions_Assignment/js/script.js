@@ -16,23 +16,6 @@ Functions Assignment*/
  • You	must	not	use	“main	code”	variable	inside	of	a	function,	you	must	pass	them	in	as
  arguments.*/
 
-alert("There is a 3 digit lock. Can\nyou figure out the combination?");
-
-var first = 9;
-var second = 4;
-var third = 7;
-numCheck(fstDigit);
-
-
- var fstDigit = prompt("What is the first number in\n the combination? ");
-
-
-var scdDigit = function(){
-    prompt ("What is the second digit\nin the combination?")
-};
-var thdDigit = function(){
-    prompt ("What is the third digit\nin the combination?")
-};
 
 
 
